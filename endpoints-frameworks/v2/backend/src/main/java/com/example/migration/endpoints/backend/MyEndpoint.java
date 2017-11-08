@@ -22,8 +22,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-
-
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;

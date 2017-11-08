@@ -22,15 +22,11 @@ buildscript {
     repositories {
         jcenter()
     }
-    dependencies {
-        // V2: Add the new Endpoints Framework plugin dependencies
-        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.0'
-    }
 }
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId 'com.example.migration.endpoints.app'
         minSdkVersion 25
@@ -64,7 +60,7 @@ dependencies {
 
     // V2: Endpoints Framework v2 migration
     endpointsServer project(path: ':backend', configuration: 'endpoints')
-    compile 'com.google.api-client:google-api-client:1.22.0'
+    compile 'com.google.api-client:google-api-client:+'
     compile 'com.google.http-client:google-http-client-android:1.22.0'
 }
 // [END gradle_script]
